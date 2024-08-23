@@ -1,0 +1,8 @@
+# Escolher qual banco de dados ser� usado de acordo com o ambiente
+spring:
+  application:
+    name: portaledu
+  profiles:
+    active:
+    - dev
+ 
