@@ -1,0 +1,15 @@
+# Banco de dados h2 para ambiente de testes
+spring:
+  datasource:
+    url: jdbc:h2:mem:db_teste
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect 
+    hibernate: 
+      ddl-auto: update
+  h2:
+    console:
+      path: /h2-console
+      enabled: true      

@@ -1,0 +1,14 @@
+# Banco de dados mysql para ambiente de desenvolvimento
+spring:
+  datasource:
+    #A porta está fora do padrão pois estou rodando o o mysql em um container docker
+    url: jdbc:mysql://localhost:3355/portal-edu
+    password: admin123
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    #properties:
+     # hibernate: 
+      #  dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate: 
+      ddl-auto: update 
