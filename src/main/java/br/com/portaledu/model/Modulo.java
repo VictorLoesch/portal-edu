@@ -36,6 +36,6 @@ public class Modulo {
 	
 	
 	@ManyToOne
-	@JoinColumn(name = "curso_id")
+	@JoinColumn(name = "curso_id", nullable = false)
 	private Curso curso;
 }
