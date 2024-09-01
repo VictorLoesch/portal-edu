@@ -7,6 +7,8 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
@@ -27,5 +29,9 @@ public class Conteudo {
 	
 	@Column(length = 1000, nullable = false)
 	private String url;
+	
+	@ManyToOne
+	@JoinColumn(name = "modulo_id", nullable = false)
+	private Modulo modulo;
 	
 }
