@@ -15,7 +15,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class Professor extends Usuario{
+public class Professor extends AbstractUsuario{
 
 	
 	@OneToMany(mappedBy = "professor",cascade = CascadeType.ALL, orphanRemoval = true)

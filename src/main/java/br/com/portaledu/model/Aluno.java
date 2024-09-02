@@ -14,7 +14,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class Aluno extends Usuario {
+public class Aluno extends AbstractUsuario {
 	
 	@ManyToMany(mappedBy = "alunos")
     private List<Curso> cursos;
