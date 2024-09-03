@@ -32,6 +32,7 @@
 		<flyway.version>10.8.1</flyway.version>
 		<h2.version>2.1.214</h2.version>
 		<mysql.version>8.3.0</mysql.version>
+		<dozzer.version>7.0.0</dozzer.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -82,7 +83,11 @@
 			<version>${lombok.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		
+		<dependency>
+		    <groupId>com.github.dozermapper</groupId>
+		    <artifactId>dozer-core</artifactId>
+		    <version>${dozzer.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
