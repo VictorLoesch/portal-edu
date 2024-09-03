@@ -27,6 +27,10 @@ public class Conteudo {
 	@Column(nullable = false)
 	private TipoConteudo tipo;
 	
+	
+	@Column(length = 100 ,nullable = false)
+	private String titulo;
+	
 	@Column(length = 1000, nullable = false)
 	private String url;
 	
