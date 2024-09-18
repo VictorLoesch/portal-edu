@@ -1,0 +1,7 @@
+CREATE TABLE conteudo (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    tipoConteudo VARCHAR(255),
+    titulo VARCHAR(100) NOT NULL,
+    url VARCHAR(1000) NOT NULL,
+    modulo_id BIGINT NOT NULL
+);

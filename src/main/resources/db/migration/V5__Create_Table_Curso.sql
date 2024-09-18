@@ -1,0 +1,7 @@
+CREATE TABLE curso (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    descricao VARCHAR(1000) NOT NULL,
+    professor_id BIGINT NOT NULL
+);
+

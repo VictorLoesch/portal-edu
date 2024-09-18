@@ -1,0 +1,6 @@
+CREATE TABLE modulo (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    descricao VARCHAR(500),
+    curso_id BIGINT NOT NULL
+);
