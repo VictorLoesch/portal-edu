@@ -32,7 +32,7 @@
 		<flyway.version>10.8.1</flyway.version>
 		<h2.version>2.1.214</h2.version>
 		<mysql.version>8.3.0</mysql.version>
-		<dozzer.version>7.0.0</dozzer.version>
+		<mapstruct.version>1.6.0</mapstruct.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -84,9 +84,14 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>com.github.dozermapper</groupId>
-		    <artifactId>dozer-core</artifactId>
-		    <version>${dozzer.version}</version>
+    	    <groupId>org.mapstruct</groupId>
+       		<artifactId>mapstruct</artifactId>
+        	<version>${mapstruct.version}</version>
+	    </dependency>	
+		<dependency>
+    		<groupId>org.flywaydb</groupId>
+    		<artifactId>flyway-core</artifactId>
+    		<version>${flyway.version}</version>
 		</dependency>
 	</dependencies>
 
@@ -95,6 +100,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				
+			</plugin>
+	
+			<plugin>
+			    <groupId>org.flywaydb</groupId>
+			    <artifactId>flyway-maven-plugin</artifactId>
+			    <version>${flyway.version}</version>
+			    <executions>
+			    </executions>
 			</plugin>
 		</plugins>
 	</build>
