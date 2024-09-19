@@ -6,8 +6,8 @@ import br.com.portaledu.model.Conteudo;
 import br.com.portaledu.model.Curso;
 
 public record ModuloRecord(String titulo,
-							String descrição,
-							List<Conteudo> conteudos,
+							String descricao,
+							List<ConteudoRecord> conteudos,
 							Curso curso) {
 
 }

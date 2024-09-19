@@ -29,7 +29,7 @@ public class Modulo {
 	private String titulo;
 	
 	@Column(length = 500)
-	private String descrição;
+	private String descricao;
 	
 	@OneToMany(mappedBy = "modulo", orphanRemoval = true, cascade = CascadeType.ALL)
 	private List<Conteudo> conteudos;
